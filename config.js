@@ -21,7 +21,7 @@ module.exports = {
   author: {
     name: 'Kingso',
     photo: '/photo.jpg',
-    bio: 'Developer',
+    bio: '각자의 방식대로',
     contacts: {
       email: '#',
       telegram: '#',
