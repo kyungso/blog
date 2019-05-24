@@ -11,4 +11,4 @@ tags:
 description: ""
 ---
 
-![blog_portfolio](/media/blog_portfolio.pdf)
+![blog_portfolio.pdf](/media/blog_portfolio.pdf)
