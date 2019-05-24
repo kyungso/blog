@@ -24,11 +24,8 @@ module.exports = {
     bio: '각자의 방식대로',
     contacts: {
       email: '#',
-      telegram: '#',
-      twitter: '#',
       github: '#',
-      rss: '#',
-      vkontakte: '#'
+      rss: '#'
     }
   }
 };
