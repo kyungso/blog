@@ -1,7 +1,7 @@
 // @flow
 import React from 'react';
-import { graphql, StaticQuery } from 'gatsby';
-import { getContactHref } from '../../../utils';
+import { graphql, StaticQuery, withPrefix } from 'gatsby';
+
 import styles from './Author.module.scss';
 
 export const PureAuthor = ({ data }: Object) => {
@@ -10,15 +10,17 @@ export const PureAuthor = ({ data }: Object) => {
   return (
     <div className={styles['author']}>
       <p className={styles['author__bio']}>
-        {author.bio}
-        <a
-          className={styles['author__bio-twitter']}
-          href={getContactHref('twitter', author.contacts.twitter)}
-          rel="noopener noreferrer"
-          target="_blank"
-        >
-          <strong>{author.name}</strong> on Twitter
-        </a>
+        <span className={styles['author__photo']}>
+          <img  
+            src={withPrefix(author.photo)}
+            alt={author.name}
+          />
+        </span>
+        <span>
+          <strong>{author.name}</strong>
+          <br/>
+          <span>{author.bio}</span>
+        </span>
       </p>
     </div>
   );
@@ -33,9 +35,7 @@ export const Author = () => (
             author {
               name
               bio
-              contacts {
-                twitter
-              }
+              photo
             }
           }
         }
