@@ -20,8 +20,11 @@ View Controller Catalog for iOS 첫 번째 읽기 리스트입니다.
 <br>
 
 ### Index
+
 [1. Navigation Controller](#Navigation-Controllers)
+
 [2. Customizing the Navigation Bar Appearance](#Customizing-the-Navigation-Bar-Appearance) (네비게이션 바를 커스텀 하는 방법)
+
 [3. Displaying a Navigation Toolbar](#Displaying-a-Navigation-Toolbar) (툴바를 커스텀 하는 방법)
 
 <br>
@@ -33,6 +36,7 @@ view controller를 커스텀할 때 사용할 수 있습니다. 이 문서는 UI
 
 <br>
 <br>
+
 ## 1. Navigation Controllers
 
 navigation controller는 계층적인 내용을 더 깊게 자세히 파고들 수 있는 인터페이스를 제공하는 view controller의 스택을 다룹니다. navigation controller는 뷰 계층구조를 스스로 포함하고 있습니다. navigation controller는 직접적으로 처리하는 뷰와 커스텀된 content view controller에 의해 처리되는 뷰로 구성됩니다. 각각의 content view controller는 별개의 뷰 계층구조를 처리하고, navigation controller는 이러한 뷰 계층구조 사이의 네비게이션을 조정합니다.

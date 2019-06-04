@@ -28,6 +28,7 @@ AVFoundation은 다양한 Apple 플랫폼에서 사운드 및 영상 미디어�
 AVAudioPlayer 클래스는 파일 또는 메모리에 있는 사운드 데이터를 재생하는 기능을 제공합니다.
 
 <br>
+
 ##### AVAudioPlayer 주요 기능
 - 파일 또는 메모리에 있는 사운드 재생(네트워크에 있는 사운드 파일은 재생 불가)
 - 파일 재생 시간 길이의 제한없이 사운드 재생
@@ -38,6 +39,7 @@ AVAudioPlayer 클래스는 파일 또는 메모리에 있는 사운드 데이터
 - 사운드 반복재생 기능
 
 <br>
+
 ##### AVAudioPlayer 주요 프로퍼티
 - var isPlaying: Bool : 사운드가 현재 재생되고 있는지 아닌지 여부
 - var volume: Float : 사운드의 볼륨값, 최소 0.0 ~ 최대 1.0
@@ -49,10 +51,13 @@ AVAudioPlayer 클래스는 파일 또는 메모리에 있는 사운드 데이터
 - var duration: TimeInterval : 사운드의 총 재생 시간(초 단위)
 - var currentTime: TimeInterval : 사운드의 현재 재생 시각(초 단위)
 - protocol AVAudioPlayerDelegate : 사운드 재생 완료, 재생 중단 및 디코딩 오류에 응답할 수 있는 프로토콜
+
 <br>
 
 ##### AVAudioPlayer 주요 메서드
+
 - AVAudioPlayer 초기화 메서드
+
 ``` Swift
 // 특정 위치에 있는 사운드 파일로 초기화
 func init(contentOf: URL)
@@ -60,7 +65,9 @@ func init(contentOf: URL)
 // 메모리에 올라와있는 데이터를 이용해 초기화
 func init(data: Data)
 ```
-- AVAudioPlayer 재생관련 메서드  
+
+- AVAudioPlayer 재생관련 메서드
+
 ``` Swift
 // 사운드 재생
 func play()

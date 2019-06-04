@@ -136,6 +136,7 @@ UILabel은 한 줄 또는 여러 줄의 텍스트를 보여주는 뷰로, UIButt
 > 3. 레이블의 모양 및 특성을 설정하십시오.
 
 <br>
+
 #### 레이블 주요 프로퍼티
 
 레이들의 프로퍼티에 접근해 나타내려는 문자의 내용, 색상, 폰트, 문자정렬 방식, 라인 수 등을 조정할 수 있습니다.
@@ -183,7 +184,9 @@ UILabel은 한 줄 또는 여러 줄의 텍스트를 보여주는 뷰로, UIButt
 <br>
 
 ## UISlider
+
 UISlider은 연속된 값 중에서 특정 값을 선택하는데 사용되는 컨트롤입니다.
+
 <br>
 
 > **슬라이더 생성 3단계**
@@ -201,12 +204,14 @@ UISlider은 연속된 값 중에서 특정 값을 선택하는데 사용되는 �
 <br>
 
 #### 슬라이더와 메서드 연결하는 방법
+
 1. addTarget 메서드 사용
 2. 인터페이스 빌더에서 연결 (@IBAction)
 
 <br>
 
 #### 슬라이더와 연결하는 메서드 형식
+
 슬라이더의 값을 변경했을 때 필요한 정보에 따라 아래 3가지 중 한 가지를 선택하여 사용하세요.
 
 ``` Swift
@@ -216,24 +221,31 @@ func doSomething(sender: UISlider, forEvent event: UIEvent)
 ```
 
 <br>
+
 #### 슬라이더 주요 프로퍼티
 
 - var minimumValue: Float, var maximumValue: Float : 슬라이더 양끝의 최소, 최대 값 (범위)
+
 <br>
 
 - var value: Float : 슬라이더의 현재 값
+
 <br>
 
 - var isContinuous: Bool : 슬라이더의 연속적인 값 변화에 따라 이벤트 역시 연속적으로 호출할 것인지의 여부
+
 <br>
 
 - var minimumValueImage: UIImage?, var maximumValueImage: UIImage? : 슬라이더 양끝단의 이미지
+
 <br>
 
 - var thumbTintColor: UIColor? : thumb의 틴트 색상
+
 <br>
 
 - var minimumTrackTintColor: UIColor?, var maximumTrackTintColor: UIColor? : thumb을 기준으로 앞쪽 트랙과 뒤쪽 트랙인 틴트 색상
+
 <br>
 
 #### 슬라이더 주요 메서드
