@@ -1,5 +1,5 @@
 ---
-title: [iOS] UIButton, UISlider, UILabel
+title: "[iOS] UIButton, UISlider, UILabel"
 date: "2019-05-29T14:00:00.169Z"  
 template: "post"  
 draft: false  

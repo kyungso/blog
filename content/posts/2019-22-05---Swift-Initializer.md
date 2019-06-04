@@ -1,5 +1,5 @@
 ---
-title: [Swift] Initializer(생성자)  
+title: "[Swift] Initializer(생성자)"
 date: "2019-05-22T14:00:00.169Z"  
 template: "post"  
 draft: false  

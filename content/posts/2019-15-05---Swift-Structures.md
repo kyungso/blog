@@ -1,5 +1,5 @@
 ---
-title: [Swift] Structure(구조체)  
+title: "[Swift] Structure(구조체)"  
 date: "2019-05-15T14:00:00.169Z"  
 template: "post"  
 draft: false  
