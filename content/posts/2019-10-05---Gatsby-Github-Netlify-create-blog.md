@@ -23,19 +23,25 @@ description: "It is the way how to make gatsby blog using github and netlify."
 
 ### homebrew 설치
 
-+ 설치되어 있는 경우  
-```brew -v``` 로 버전 확인
+- 설치되어 있는 경우  
+"brew -v" 로 버전 확인
+
 <br>
 
-+ 설치되어 있지 않은 경우  
-[https://brew.sh/]( https://brew.sh/) 로 접속하여 설치
+- 설치되어 있지 않은 경우  
+[https://brew.sh/](https://brew.sh/) 로 접속하여 설치
+
 <br>
 <br>
 
 ### Xcode Command Line Tools 설치
 
 terminal을 열고  
-```xcode-select --install```
+
+```
+xcode-select --install
+```
+
 <br>
 <br>
 <br>
@@ -65,6 +71,7 @@ npm --version
 [Install Git on Linux](https://www.atlassian.com/git/tutorials/install-git#linux)  
 
 git 설치까지 적기엔 시간이 오래걸리므로...gatsby 문서 내에 있는 링크를 첨부한다.  
+
 <br>
 <br>
 
@@ -72,7 +79,10 @@ git 설치까지 적기엔 시간이 오래걸리므로...gatsby 문서 내에 �
 
 ### Gatsby CLI 설치
 
-```npm install -g gatsby-cli```
+```
+npm install -g gatsby-cli
+```
+
 <br>
 <br>
 
@@ -87,16 +97,20 @@ git 설치까지 적기엔 시간이 오래걸리므로...gatsby 문서 내에 �
 참고로 이 블로그의 테마는 gatsby-starter-lumen 이고, github 주소는 [https://github.com/alxshelepenok/gatsby-starter-lumen](https://github.com/alxshelepenok/gatsby-starter-lumen) 이다.
 
 이제 terminal을 열고, 프로젝트가 저장되기를 원하는 경로로 이동한다.  
-```gatsby new blog https://github.com/alxshelepenok/gatsby-starter-lumen```  
+```
+gatsby new blog https://github.com/alxshelepenok/gatsby-starter-lumen
+```  
 blog 대신 원하는 프로젝트 이름으로 적으면 된다.
 
 그 다음, 사이트를 실행시키기 위해서 아래의 명령어를 입력한다.  
+
 ```
-cd blog
+cd blog  
 gatsby develop
 ```
 
 http://localhost:8000 으로 접속한다면 성공!
+
 <br>
 <br>
 
@@ -204,13 +218,15 @@ git commit -m "commit message"
 git push origin master
 ```
 
-push를 하면, netlify가 자동으로 빌드하여 재배포를 시도한다. 성공!!! 끝이다!!!  
+push를 하면, netlify가 자동으로 빌드하여 재배포를 시도한다. 성공!!! 끝이다!!!
+
 <br>
 <br>
 
 이제 자기가 원하는 대로 커스텀하거나 포스트를 작성하면 된다.  
 이것이 나의 첫번째 포스트이다.  
 아직 블로그를 수정해야할 부분이 아직 많지만, 포스트를 작성하면서 수정할 계획이다.  
+
 <br>
 <br>
 

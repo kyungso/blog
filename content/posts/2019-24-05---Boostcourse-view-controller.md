@@ -20,9 +20,9 @@ View Controller Catalog for iOS 첫 번째 읽기 리스트입니다.
 <br>
 
 ### Index
-> [1. Navigation Controller](#Navigation-Controllers)
-> - [Customizing the Navigation Bar Appearance](#Customizing-the-Navigation-Bar-Appearance) (네비게이션 바를 커스텀 하는 방법)
-> - [Displaying a Navigation Toolbar](#Displaying-a-Navigation-Toolbar) (툴바를 커스텀 하는 방법)
+[1. Navigation Controller](#Navigation-Controllers)
+[2. Customizing the Navigation Bar Appearance](#Customizing-the-Navigation-Bar-Appearance) (네비게이션 바를 커스텀 하는 방법)
+[3. Displaying a Navigation Toolbar](#Displaying-a-Navigation-Toolbar) (툴바를 커스텀 하는 방법)
 
 <br>
 
@@ -252,6 +252,7 @@ Tab Bar Controller가 지원하는 전체화면에 관한 내용과 관련 프�
 <br>
 <br>
 <br>
+
 ## Page View Controllers
 > Page View Controller의 사용 목적 Page View Controller가 뷰 계층구초에 관한 내용
 
@@ -282,6 +283,7 @@ left-to-right와 top-to-bottom식의 컨텐츠를 보여주기 위해 Page Contr
 <br>
 <br>
 <br>
+
 ## Split View Controllers
 > Split View Controller의 역할에 관한 내용 Split View Interface의 Pane에 관한 내용
 
@@ -297,6 +299,7 @@ Split View Controller가 화면의 가로방향과 세로방향 지원에 관한
 <br>
 <br>
 <br>
+
 ## Popovers
 > Popover의 역할과 사용되는 상황에 관한 내용 Modal View와의 비교에 대한 간략한 내용
 
@@ -312,6 +315,7 @@ Popover 관련있는 코드를 작성할 때 고려해야할 사항들에 관한
 <br>
 <br>
 <br>
+
 ## Combined View Controller Interfaces
 > 여러 View Controller 결합하여 인터페이스를 생성할 때, View Controller의 결합순서 iOS에서 Table view, navigation, tab bar controller를 결합하는 방법에 대한 설명
 
@@ -329,6 +333,7 @@ Table View Controller를 Navigation Interface로 활용하는 방법에 관한 �
 
 <br>
 <br>
+
 #### Prerequisites
 [1. View Controller Programming Guide for iOS](https://developer.apple.com/library/archive/featuredarticles/ViewControllerPGforiPhoneOS/index.html#//apple_ref/doc/uid/TP40007457)
 
