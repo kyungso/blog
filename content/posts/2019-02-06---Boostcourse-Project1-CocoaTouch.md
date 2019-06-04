@@ -148,12 +148,18 @@ Foundation은 원시 데이터 타입(String, Int, Double), 컬렉션 타입(Arr
 <br>
 
 참고 링크
-[1. 애플 공식 문서 - Cocoa(Touch)](https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Cocoa.html)
+[1. 애플 공식 문서 - Cocoa(Touch)](https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Cocoa.html)  
+
 [2. 위키피디아 - Cocoa(API)](https://en.wikipedia.org/wiki/Cocoa_(API))
+
 [3. Github - CocoaCoreCompetencies](https://github.com/conqueror/CocoaCoreCompetencies/blob/master/CocoaCoreCompetencies.pdf)
+
 [4. 애플 공식 문서 - UIKit](https://developer.apple.com/documentation/uikit)
+
 [5. 애플 공식 문서 - app development with UIKit](https://developer.apple.com/documentation/uikit/about_app_development_with_uikit)
+
 [6. 애플 공식 문서 - Foundation](https://developer.apple.com/documentation/foundation)
+
 [7. 애플 공식 문서 - Swift Standard Library](https://developer.apple.com/documentation/swift)
 
 From [부스트코스 - iOS](https://www.edwith.org/boostcourse-ios/)

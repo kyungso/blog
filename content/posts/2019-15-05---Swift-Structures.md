@@ -307,6 +307,7 @@ Extensive computation or DB access ?
 <br>
 
 참고 :
-- Raywenderlich.com
 
-- [Swift:Understanding Mutating Functions](https://medium.com/the-andela-way/swift-understanding-mutating-functions-in-two-minutes-d9e363904e3a)
+Raywenderlich.com
+
+[Swift:Understanding Mutating Functions](https://medium.com/the-andela-way/swift-understanding-mutating-functions-in-two-minutes-d9e363904e3a)

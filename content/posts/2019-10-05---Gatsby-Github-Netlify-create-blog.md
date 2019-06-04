@@ -81,7 +81,7 @@ git 설치까지 적기엔 시간이 오래걸리므로...gatsby 문서 내에 �
 먼저, [Gatsby 테마](https://www.gatsbyjs.org/starters/?v=2) 여기서 마음에 드는 테마를 골라야 한다.
 
 마음에 드는 테마 밑에 Github 로고를 클릭한다.  
-![1_gastby-starter-github.jpg](/media/1_gastby-starter-github.jpg) 
+![1_gastby-starter-github.jpg](/media/1_gastby-starter-github.jpg)
 <br>
 
 참고로 이 블로그의 테마는 gatsby-starter-lumen 이고, github 주소는 [https://github.com/alxshelepenok/gatsby-starter-lumen](https://github.com/alxshelepenok/gatsby-starter-lumen) 이다.
@@ -177,7 +177,7 @@ Get started for free 버튼을 눌러 시작한다. GitHub로 연동할 것이�
 <br>
 <br>
 
-### But! 내가 선택한 테마는 Deploy Fail이 되어 배포 실패가 되었다 !!! 왜?? Why??? 
+### But! 내가 선택한 테마는 Deploy Fail이 되어 배포 실패가 되었다 !!! 왜?? Why???
 <br>
 
 Deploy Log를 보니   
@@ -215,4 +215,5 @@ push를 하면, netlify가 자동으로 빌드하여 재배포를 시도한다. 
 <br>
 
 *[Gatsby-tutorial](https://www.gatsbyjs.org/tutorial/part-zero/)*  
+
 *[gatsby-starter-lumen](https://github.com/alxshelepenok/gatsby-starter-lumen)*

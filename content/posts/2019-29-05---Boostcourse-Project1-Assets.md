@@ -134,7 +134,9 @@ Xcode에서 프로젝트를 처음 생성했을 때 자동으로 **Assets.xcasse
 
 
 참고 링크
+
 [1. 애플 공식 문서 - Asset Catalogs](https://help.apple.com/xcode/mac/current/#/dev10510b1f7)
+
 [2. 애플 공식 문서 - Types Reference](https://developer.apple.com/library/archive/documentation/Xcode/Reference/xcode_ref-Asset_Catalog_Format/AssetTypes.html)
 
 From [부스트코스 - iOS](https://www.edwith.org/boostcourse-ios/)

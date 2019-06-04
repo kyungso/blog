@@ -119,8 +119,11 @@ func init(fireAt: Date, interval: TimeInterval, target: Any, selector: Selector,
 <br>
 
 참고 링크
+
 [1. 애플 공식 문서 - AVFoundation](https://developer.apple.com/documentation/avfoundation)
+
 [2. 애플 공식 문서 - AVAudioPlayer](https://developer.apple.com/documentation/avfoundation/avaudioplayer)
+
 [3. 애플 공식 문서 - Timer](https://developer.apple.com/documentation/foundation/timer)
 
 From [부스트코스 - iOS](https://www.edwith.org/boostcourse-ios/)

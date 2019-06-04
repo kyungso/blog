@@ -201,10 +201,11 @@ UISlider은 연속된 값 중에서 특정 값을 선택하는데 사용되는 �
 <br>
 
 #### 슬라이더와 메서드 연결하는 방법
-1. addTarget(_:action:for:) 메서드 사용
+1. addTarget 메서드 사용
 2. 인터페이스 빌더에서 연결 (@IBAction)
 
 <br>
+
 #### 슬라이더와 연결하는 메서드 형식
 슬라이더의 값을 변경했을 때 필요한 정보에 따라 아래 3가지 중 한 가지를 선택하여 사용하세요.
 
@@ -264,8 +265,11 @@ func thumbImage(for: UIControlState) -> UIImage?
 <br>
 
 참고 링크
+
 [1. 애플 공식 문서 - UIButton](https://developer.apple.com/documentation/uikit/uibutton)
+
 [2. 애플 공식 문서 - UILabel](https://developer.apple.com/documentation/uikit/uilabel)
+
 [3. 애플 공식 문서 - UISlider](https://developer.apple.com/documentation/uikit/uislider)
 
 From [부스트코스 - iOS](https://www.edwith.org/boostcourse-ios/)

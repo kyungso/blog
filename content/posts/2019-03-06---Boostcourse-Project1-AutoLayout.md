@@ -376,7 +376,9 @@ H:[button]-8-[textField] 또는 H:[button]-[textField]
 <br>
 
 참고 링크
+
 [1. 애플 공식 문서 - Auto Layout Guide](https://developer.apple.com/library/archive/documentation/UserExperience/Conceptual/AutolayoutPG/index.html#//apple_ref/doc/uid/TP40010853-CH7-SW1)
+
 [2. iOS H.I.G - Adaptivity and Layout](https://developer.apple.com/design/human-interface-guidelines/ios/visual-design/adaptivity-and-layout/)
 
 From [부스트코스 - iOS](https://www.edwith.org/boostcourse-ios/)
