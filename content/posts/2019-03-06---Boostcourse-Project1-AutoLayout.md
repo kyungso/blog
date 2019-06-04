@@ -17,16 +17,26 @@ description: ""
 
 <br>
 
-- [오토레이아웃(AutoLayout)](#오토레이아웃(AutoLayout))
+- [오토레이아웃(AutoLayout)](#오토레이아웃(autoLayout))
+
 
 1. < 코드로 오토레이아웃 구현 >
-- [NSLayoutConstraint](#NSLayoutConstraint)
-- [Visual Format Language](#Visual-Format-Language)
+
+
+- [NSLayoutConstraint](#nslayoutconstraint)
+
+- [Visual Format Language](#visual-format-language)
+
 
 2. < 인터페이스 빌더에서 오토레이아웃 구현 >
-- [Interface Builder](#Interface-Builder)
+
+
+- [Interface Builder](#interface-builder)
+
 - [생성된 제약 찾기](#생성된-제약-찾기)
+
 - [제약 편집하기](#제약-편집하기)
+
 <br>
 
 ## 오토레이아웃(AutoLayout)

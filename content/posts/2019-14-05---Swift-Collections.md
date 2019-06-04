@@ -14,13 +14,13 @@ description: ""
 
 # Collections
 
-- [Array](#Array)  
+- [Array](#array)  
 
-- [Dictionary](#Dictionary)  
+- [Dictionary](#dictionary)  
 
-- [Set](#Set)  
+- [Set](#set)  
 
-- [Closure](#Closure)  
+- [Closure](#closure)  
 
 
 

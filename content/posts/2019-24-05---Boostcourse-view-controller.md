@@ -21,11 +21,11 @@ View Controller Catalog for iOS 첫 번째 읽기 리스트입니다.
 
 ### Index
 
-[1. Navigation Controller](#Navigation-Controllers)
+[1. Navigation Controllers](#navigation-controllers)
 
-[2. Customizing the Navigation Bar Appearance](#Customizing-the-Navigation-Bar-Appearance) (네비게이션 바를 커스텀 하는 방법)
+[2. Customizing the Navigation Bar Appearance](#) (네비게이션 바를 커스텀 하는 방법)
 
-[3. Displaying a Navigation Toolbar](#Displaying-a-Navigation-Toolbar) (툴바를 커스텀 하는 방법)
+[3. Displaying a Navigation Toolbar](#) (툴바를 커스텀 하는 방법)
 
 <br>
 
@@ -37,7 +37,7 @@ view controller를 커스텀할 때 사용할 수 있습니다. 이 문서는 UI
 <br>
 <br>
 
-## 1. Navigation Controllers
+## Navigation Controllers
 
 navigation controller는 계층적인 내용을 더 깊게 자세히 파고들 수 있는 인터페이스를 제공하는 view controller의 스택을 다룹니다. navigation controller는 뷰 계층구조를 스스로 포함하고 있습니다. navigation controller는 직접적으로 처리하는 뷰와 커스텀된 content view controller에 의해 처리되는 뷰로 구성됩니다. 각각의 content view controller는 별개의 뷰 계층구조를 처리하고, navigation controller는 이러한 뷰 계층구조 사이의 네비게이션을 조정합니다.
 
@@ -211,21 +211,25 @@ applicationFrame 프로퍼티가 아닌, UIScreen class의 프로퍼티인 bound
 <br>
 
 #### [ Modifying the Navigation Stack ]
+
 Navigation Controller 클래스가 제공하는 Navigation Stack을 관리하기 위한 옵션에 관한 내용
 
 <br>
 
 #### [ Monitoring Changes to the Navigation Stack ]
+
 Navigation Stack에 있는 View Controller가 push 또는 pop이 되어 Navigation Stack이 변할 때 이루어지는 일련의 과정과 Navigation Controller가 보내는 메시지에 관한 내용
 
 <br>
 
 #### [ Customizing the Navigation Bar Appearance ]
+
 Navigation Bar을 커스터마이징하는 방법에 관한 내용
 
 <br>
 
 #### [ Displaying a Navigation Toolbar ]
+
 Toolbar를 표시하거나 숨기기 위한 설정방법과 Toolbar Item에 관한 내용
 
 <br>
@@ -233,6 +237,7 @@ Toolbar를 표시하거나 숨기기 위한 설정방법과 Toolbar Item에 관�
 <br>
 
 ## Tab Bar Controllers
+
 > Tab Bar Controller에 대한 소개 Tab Bar Controller의 뷰 계층구조(view hierarchy)에 관한 내용 Tab Bar Controller의 구성과 사용법에 관한 내용
 
 - #### Anatomy of a Tab Bar Interface
@@ -258,6 +263,7 @@ Tab Bar Controller가 지원하는 전체화면에 관한 내용과 관련 프�
 <br>
 
 ## Page View Controllers
+
 > Page View Controller의 사용 목적 Page View Controller가 뷰 계층구초에 관한 내용
 
 - #### Anatomy of a Page View Controller Interface
@@ -289,6 +295,7 @@ left-to-right와 top-to-bottom식의 컨텐츠를 보여주기 위해 Page Contr
 <br>
 
 ## Split View Controllers
+
 > Split View Controller의 역할에 관한 내용 Split View Interface의 Pane에 관한 내용
 
 - #### Creating a Split View Controller Using a Storyboard
@@ -305,6 +312,7 @@ Split View Controller가 화면의 가로방향과 세로방향 지원에 관한
 <br>
 
 ## Popovers
+
 > Popover의 역할과 사용되는 상황에 관한 내용 Modal View와의 비교에 대한 간략한 내용
 
 - #### Creating and Presenting a Popover
@@ -339,6 +347,7 @@ Table View Controller를 Navigation Interface로 활용하는 방법에 관한 �
 <br>
 
 #### Prerequisites
+
 [1. View Controller Programming Guide for iOS](https://developer.apple.com/library/archive/featuredarticles/ViewControllerPGforiPhoneOS/index.html#//apple_ref/doc/uid/TP40007457)
 
 [2. App Programming Guide for iOS](https://developer.apple.com/library/archive/documentation/iPhone/Conceptual/iPhoneOSProgrammingGuide/Introduction/Introduction.html#//apple_ref/doc/uid/TP40007072)

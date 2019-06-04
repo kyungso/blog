@@ -14,9 +14,10 @@ description: "It is the way how to make gatsby blog using github and netlify."
 <br>
 
 - [필요한 개발 환경](#필요한-개발-환경)
-- [Gastby 블로그 만드는 과정](#Gastby-블로그-만드는-과정)
-- [Git repository 생성](#Git-repository-생성)
-- [Netlify 배포](#Netlify-배포)  
+- [Gatsby 블로그 만드는 과정](#gatsby-블로그-만드는-과정)
+- [Git repository 생성](#git-repository-생성)
+- [Netlify 배포](#netlify-배포)
+
 <br>
 
 # 필요한 개발 환경  
@@ -75,7 +76,7 @@ git 설치까지 적기엔 시간이 오래걸리므로...gatsby 문서 내에 �
 <br>
 <br>
 
-# Gastby 블로그 만드는 과정
+# Gatsby 블로그 만드는 과정
 
 ### Gatsby CLI 설치
 

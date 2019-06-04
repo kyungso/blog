@@ -51,6 +51,7 @@ description: "코코아 터치 프레임워크는 iOS 애플리케이션 개발 
 <br>
 
 ## UIKit Framework
+
 코코아 터치 프레임워크에 포함된 UIKit에 대해 알아봅시다.  
 UIKit은 iOS 애플리케이션 개발시 사용자에게 보여질 화면을 구성하고 사용자 액션에 대응에 관련된 다양한 요소를 포함합니다.
 
@@ -64,8 +65,11 @@ UIKit은 iOS 애플리케이션 개발시 사용자에게 보여질 화면을 �
 > - UIKit은 iOS와 tvOS 플랫폼에서만 사용합니다.
 
 <br>
+
 #### UIKit 기능별 요소
+
 <br>
+
 ##### 사용자 인터페이스
 - View and Control : 화면에 콘텐츠 표시
 - View Controller : 사용자 인터페이스 관리
@@ -73,11 +77,13 @@ UIKit은 iOS 애플리케이션 개발시 사용자에게 보여질 화면을 �
 - Window and Screen : 뷰 계층을 위한 윈도우 제공
 
 <br>
+
 ##### 사용자 액션
 - Touch, Press, Gesture : 제스처 인식기를 통한 이벤트 처리 로직
 - Drag and Drop : 화면 위에서 드래그 앤 드롭 기능
 - Peek and Pop : 3D 터치에 대응한 미리 보기 기능
 - Keyboard and Menu : 키보드 입력을 처리 및 사용자 정의 메뉴 표시
+
 <br>
 
 
@@ -88,7 +94,9 @@ UIKit은 iOS 애플리케이션 개발시 사용자에게 보여질 화면을 �
 
 
 *생각해보기*
+
 Xcode 프로젝트에서 새로운 ViewController를 생성하면 상단에 'import UIKit'이 기본적으로 명시되어 있습니다. 왜 ViewController와 UIKit는 단짝일까요?
+
 ㄴ ViewController는 UIViewController를 상속받습니다. UIViewController는 UIKit 프레임워크에 정의된 클래스이기 때문에, UIKit을 import 해주지 않으면 컴파일러는 UIViewController가 누군지 알 수 없습니다.
 
 <br>
@@ -111,15 +119,23 @@ Foundation은 원시 데이터 타입(String, Int, Double), 컬렉션 타입(Arr
 #### Foundation 기능별 요소
 
 <br>
+
 ##### 기본
+
 - Number, Data, String : 원시 데이터 타입 사용
+
 - Collection : Array, Dictionary, Set 등과 같은 컬렉션 타입 사용
+
 - Data and Time : 날짜와 시간을 계산하거나 비교하는 작업
+
 - Unit and Measurement : 물리적 차원을 숫자로 표현 및 관련 단위 간 변환 가능
+
 - Data Formatting : 숫자, 날짜, 측정값 등을 문자열로 변환 또는 반대 작업
+
 - Filter and Sorting : 컬렉션의 요소를 검사하거나 정렬하는 작업
 
 <br>
+
 ##### 애플리케이션 지원
 - Resources : 애플리케이션의 에셋과 번들 데이터에 접근 지원
 - Notification : 정보를 퍼뜨리거나 받아들이는 기능 지원
@@ -127,12 +143,14 @@ Foundation은 원시 데이터 타입(String, Int, Double), 컬렉션 타입(Arr
 - Error and Exceptions : API와의 상호작용에서 발생할 수 있는 문제 상황에 대처할 수 있는 기능 지원
 
 <br>
+
 ##### 파일 및 데이터 관리
 - File System : 파일 또는 폴더를 생성하고 읽고 쓰는 기능 관리
 - Archives and Serialization : 속성 목록, JSON, 바이너리 파일들을 객체로 변환 또는 반대 작업 관리
 - iCloud : 사용자의 iCloud 계정을 이용해 데이터를 동기화하는 작업 관리
 
 <br>
+
 ##### 네트워킹
 - URL Loading System : 표준 인터넷 프로토콜을 통해 URL과 상호작용하고 서버와 통신하는 작업
 - Bonjour : 로컬 네트워크를 위한 작업
@@ -140,14 +158,16 @@ Foundation은 원시 데이터 타입(String, Int, Double), 컬렉션 타입(Arr
 <br>
 
 *생각해보기*
+
 *새롭게 ViewController 파일을 생성하면 상단에 'import UIKit'이 기본적으로 명시되어있죠. 그렇다면 어떤 파일을 생성하면 'import Foundation'이 기본적으로 명시되어있을까요?*
+
 ㄴ ViewController를 생성시 기본으로 UIKit이 import되는데 UIKit을 import하면 Foundation이 간접적으로 추가되기 때문이다. 더 자세히 설명하자면 **command 버튼을 누른 상태로 'import UIKit'의 UIKit을 클릭 --> Jump to Definition 누르면 UIKit 정의하는 파일이 나오는데, 거기에 보면 맨 위에 'import Foundation'로 Foundation 프레임워크를 import 했기 때문에 따로 import 하지 않아도 UIKit에 의해서 추가되는 것입니다.**
 
 <br>
 <br>
 <br>
 
-참고 링크
+참고 링크  
 
 [1. 애플 공식 문서 - Cocoa(Touch)](https://developer.apple.com/library/archive/documentation/General/Conceptual/DevPedia-CocoaCore/Cocoa.html)  
 
