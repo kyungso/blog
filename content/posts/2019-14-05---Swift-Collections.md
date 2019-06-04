@@ -1,5 +1,5 @@
 ---
-title: [Swift] Collection(컬렉션)  
+title: "[Swift] Collection(컬렉션)"  
 date: "2019-05-14T14:00:00.169Z"  
 template: "post"  
 draft: false  
