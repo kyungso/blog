@@ -17,7 +17,7 @@ description: ""
 
 <br>
 
-- [오토레이아웃(AutoLayout)](#오토레이아웃(autoLayout))
+- [오토레이아웃(AutoLayout)](#오토레이아웃(autolayout))
 
 
 1. < 코드로 오토레이아웃 구현 >
