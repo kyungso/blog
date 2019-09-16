@@ -12,16 +12,12 @@ export const PureComments = ({ data, postTitle, postSlug }) => {
     return null;
   }
 
-  const category_id = data.markdownRemark.frontmatter;
-
   return (
     <ReactDisqusComments
       shortname={disqusShortname}
       identifier={postTitle}
       title={postTitle}
       url={url + postSlug}
-      category_id={this.category_id}
-      onNewComment={this.notifyAboutComment}
     />
   );
 };
