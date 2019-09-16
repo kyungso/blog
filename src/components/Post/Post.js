@@ -7,7 +7,7 @@ import Meta from './Meta';
 import Tags from './Tags';
 import styles from './Post.module.scss';
 
-const Post = ({ post }) => {
+const Post = ({ data, post }) => {
   const {
     tags,
     title,
@@ -32,7 +32,7 @@ const Post = ({ post }) => {
       </div>
 
       <div className={styles['post__comments']}>
-        <Comments postSlug={post.fields.slug} postTitle={post.frontmatter.title} />
+        <Comments postSlug={post.fields.slug} postTitle={post.frontmatter.title} data={data}/>
       </div>
     </div>
   );

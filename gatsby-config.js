@@ -12,7 +12,7 @@ module.exports = {
     disqusShortname: siteConfig.disqusShortname,
     menu: siteConfig.menu,
     author: siteConfig.author,
-    siteUrl: `https://kingso.netlify.com`
+    siteUrl: 'https://kingso.netlify.com'
   },
   plugins: [
     {
@@ -116,6 +116,10 @@ module.exports = {
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-sharp',
+    {
+      resolve: 'gatsby-plugin-google-analytics',
+      options: { trackingId: 'UA-147952200-1' },
+    },
     'gatsby-plugin-netlify',
     {
       resolve: 'gatsby-plugin-netlify-cms',

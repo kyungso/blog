@@ -5,25 +5,47 @@ module.exports = {
   title: 'Kingso\'s blog',
   subtitle: 'Kingso\'s blog',
   copyright: '© All rights reserved.',
-  disqusShortname: '',
-  postsPerPage: 4,
+  disqusShortname: 'kingsoblog',
+  postsPerPage: 5,
   googleAnalyticsId: 'UA-73379983-2',
   menu: [
     {
-      label: 'Articles',
+      label: 'All',
       path: '/'
     },
     {
       label: 'About me',
       path: '/pages/about'
-    }
+    },
+    {
+      label: 'ETC',
+      path: '/etc/',
+      sub_menu: [
+        {
+          label: 'TIL',
+          path: '/til/',
+        },
+        {
+          label: 'JavaScript',
+          path: '/javascript/',
+        },
+        {
+          label: 'React',
+          path: '/react/',
+        },
+      ]
+    },
+    {
+      label: 'Tags',
+      path: '/tags',
+    },
   ],
   author: {
     name: 'Kingso',
     photo: '/photo.jpg',
     bio: '각자의 방식대로',
     contacts: {
-      email: '#',
+      email: 'cks678928@gmail.com',
       telegram: '#',
       twitter: '#',
       github: '#',

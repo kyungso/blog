@@ -95,8 +95,17 @@ a {
   color: $typographic-link-p-font-color;
   text-decoration: none;
 
-  &:hover,
-  &:focus,
+  &:hover {
+    outline-width: 0;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+  }
+
+  &:focus {
+    text-decoration: none;
+  }
+  
   &:active {
     color: $typographic-link-s-font-color;
   }

@@ -5,12 +5,15 @@ import ReactDisqusComments from 'react-disqus-comments';
 export const PureComments = ({ data, postTitle, postSlug }) => {
   const {
     url,
-    disqusShortname
+    disqusShortname,
   } = data.site.siteMetadata;
 
   if (!disqusShortname) {
     return null;
   }
+
+  // const { postNode } = data.markdownRemark;
+  // const post = postNode.frontmatter;
 
   return (
     <ReactDisqusComments
