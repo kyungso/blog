@@ -4,6 +4,7 @@ import kebabCase from 'lodash/kebabCase';
 import Layout from '../components/Layout';
 import Sidebar from '../components/Sidebar';
 import Page from '../components/Page';
+import styles from '../components/Page/Page.module.scss';
 
 const TagsListTemplate = ({ data }) => {
   const {
@@ -16,15 +17,17 @@ const TagsListTemplate = ({ data }) => {
     <Layout title={`Tags - ${title}`} description={subtitle}>
       <Sidebar />
       <Page title="Tags">
-        <ul>
-          {group.map((tag) => (
-            <li key={tag.fieldValue}>
-              <Link to={`/tag/${kebabCase(tag.fieldValue)}/`}>
-                {tag.fieldValue} ({tag.totalCount})
-              </Link>
-            </li>
-          ))}
-        </ul>
+        <div className={styles['tags']}>
+          <ul className={styles['tags__list']}>
+            {group.map((tag) => (
+              <li key={tag.fieldValue} className={styles['tags__list-item']}>
+                <Link to={`/tag/${kebabCase(tag.fieldValue)}/`} className={styles['tags__list-item-link']}>
+                  #{tag.fieldValue} ({tag.totalCount})
+                </Link>
+              </li>
+            ))}
+          </ul>
+        </div>
       </Page>
     </Layout>
   );

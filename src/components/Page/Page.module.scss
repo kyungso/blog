@@ -24,6 +24,31 @@
 
 }
 
+.tags {
+  border-radius: 8px;
+  border: solid 1px #FAFAFA;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+      &-item {
+        margin: 5px;
+        background-color: #FAFAFA;
+          &-link {
+            color: #a6abb2;
+            &:hover{
+              color: #666;
+            }
+            &:focus {
+              color: black;
+            }
+          }
+      }
+  }
+}
+
 @include breakpoint-sm {
   .page {
     lost-column: 7/12;
