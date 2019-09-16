@@ -12,8 +12,7 @@ export const PureComments = ({ data, postTitle, postSlug }) => {
     return null;
   }
 
-  // const { postNode } = data.markdownRemark;
-  // const post = postNode.frontmatter;
+  const category_id = data.markdownRemark.frontmatter;
 
   return (
     <ReactDisqusComments
@@ -21,6 +20,8 @@ export const PureComments = ({ data, postTitle, postSlug }) => {
       identifier={postTitle}
       title={postTitle}
       url={url + postSlug}
+      category_id={this.category_id}
+      onNewComment={this.notifyAboutComment}
     />
   );
 };

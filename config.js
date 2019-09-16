@@ -7,7 +7,7 @@ module.exports = {
   copyright: '© All rights reserved.',
   disqusShortname: 'kingsoblog',
   postsPerPage: 5,
-  googleAnalyticsId: 'UA-73379983-2',
+  googleAnalyticsId: 'UA-147952200-1',
   menu: [
     {
       label: 'All',
