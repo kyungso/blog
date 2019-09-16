@@ -49,7 +49,7 @@ module.exports = {
       telegram: '#',
       twitter: '#',
       github: '#',
-      rss: '#',
+      rss: 'rss.xml',
       vkontakte: '#'
     }
   }
