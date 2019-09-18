@@ -1,5 +1,6 @@
 @import '../../assets/scss/variables';
 @import '../../assets/scss/mixins';
+$total-items: 1000;
 
 .page {
   @include margin-bottom(2);

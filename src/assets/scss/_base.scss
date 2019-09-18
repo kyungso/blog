@@ -1,6 +1,7 @@
 @charset "UTF-8";
 
-@import "normalize-scss";
+@import "base/normalize";
 @import "~katex/dist/katex.min.css";
 @import "~prismjs/themes/prism-solarizedlight.css";
 @import "base/generic";
+@import "base/highlight";
