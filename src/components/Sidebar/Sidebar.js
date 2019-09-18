@@ -46,14 +46,16 @@ export const Sidebar = (props: Props) => (
             menu {
               label
               path
+              sub_menu{
+                label
+                path
+              }
             }
             author {
               name
               photo
               bio
               contacts {
-                
-
                 github
                 email
                 rss

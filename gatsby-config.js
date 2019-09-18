@@ -179,6 +179,12 @@ module.exports = {
         icon: 'static/photo.jpg'
       },
     },
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        output: '/robots.txt',
+      }
+    },
     'gatsby-plugin-offline',
     'gatsby-plugin-catch-links',
     'gatsby-plugin-react-helmet',

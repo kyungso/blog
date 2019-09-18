@@ -18,20 +18,36 @@ module.exports = {
       path: '/pages/about'
     },
     {
-      label: 'ETC',
-      path: '/etc/',
+      label: 'Posts',
+      path: '/posts/',
       sub_menu: [
         {
-          label: 'TIL',
-          path: '/til/',
-        },
-        {
-          label: 'JavaScript',
+          label: 'Javascript',
           path: '/javascript/',
         },
         {
           label: 'React',
           path: '/react/',
+        },
+        {
+          label: 'HTML/CSS',
+          path: '/html_css/',
+        },
+        {
+          label: 'DB',
+          path: '/db/',
+        },
+        {
+          label: 'IOS',
+          path: '/ios/',
+        },
+        {
+          label: 'Error',
+          path: '/error/',
+        },
+        {
+          label: 'TIL',
+          path: '/til/',
         },
       ]
     },

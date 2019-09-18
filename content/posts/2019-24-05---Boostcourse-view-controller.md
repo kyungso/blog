@@ -4,7 +4,7 @@ date: "2019-05-24T14:00:00.169Z"
 template: "post"
 draft: false
 slug: "/posts/boostcourse-view-controller/"
-category: "부스트코스"
+category: "IOS"
 tags:
 - "부스트코스"
 - "iOS"

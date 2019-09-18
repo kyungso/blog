@@ -4,7 +4,7 @@ date: "2019-06-02T14:00:00.169Z"
 template: "post"  
 draft: false  
 slug: "/posts/boostcourse-project1-CocoaTouch/"  
-category: "부스트코스"  
+category: "IOS"  
 tags:  
 - "iOS"  
 - "Cocoa Touch Framework"

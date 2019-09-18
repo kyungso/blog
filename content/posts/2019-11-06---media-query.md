@@ -4,7 +4,7 @@ date: "2019-06-11T14:00:00.169Z"
 template: "post"
 draft: false
 slug: "/posts/media-query/"
-category: "CSS"
+category: "HTML/CSS"
 tags:
 - "Web"
 - "CSS"

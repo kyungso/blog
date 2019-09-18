@@ -4,7 +4,7 @@ date: "2019-05-29T14:00:00.169Z"
 template: "post"  
 draft: false  
 slug: "/posts/boostcourse-project1-AVFoundation/"  
-category: "부스트코스"  
+category: "IOS"  
 tags:  
 - "iOS"  
 - "Swift"  

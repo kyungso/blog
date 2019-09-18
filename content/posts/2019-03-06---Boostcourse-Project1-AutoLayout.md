@@ -4,7 +4,7 @@ date: "2019-06-03T14:00:00.169Z"
 template: "post"  
 draft: false  
 slug: "/posts/boostcourse-project1-AutoLayout/"  
-category: "부스트코스"  
+category: "IOS"  
 tags:  
 - "iOS"  
 - "AutoLayout"
