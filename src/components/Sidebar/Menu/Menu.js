@@ -12,7 +12,7 @@ const Menu = ({ menu }) => (
             ? <Link
                 to={item.path}
                 className={styles['menu__list-item-link']}
-                activeClassName={styles['menu__list-item-link menu__list-item-link--active']}
+                activeClassName={styles['menu__list-item-link--active']}
               >
                 {item.label}
               </Link>
@@ -24,7 +24,7 @@ const Menu = ({ menu }) => (
                       <Link
                         to={`/category/${kebabCase(subItem.path)}`}
                         className={styles['menu__list-item-link']}
-                        activeClassName={styles['menu__list-item-link menu__list-item-link--active']}
+                        activeClassName={styles['menu__list-item-link--active']}
                       >
                         {subItem.label}
                       </Link>
