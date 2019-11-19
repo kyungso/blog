@@ -1,5 +1,5 @@
 ---
-title: 프론트엔드의 이해
+title: "프론트엔드의 이해"
 date: "2019-06-09T14:00:00.169Z"
 template: "post"
 draft: false

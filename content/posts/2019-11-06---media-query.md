@@ -1,5 +1,5 @@
 ---
-title: 미디어쿼리 (media query)
+title: "미디어쿼리 (media query)"
 date: "2019-06-11T14:00:00.169Z"
 template: "post"
 draft: false

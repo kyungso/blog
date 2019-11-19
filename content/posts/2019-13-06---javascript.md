@@ -1,5 +1,5 @@
 ---
-title: 자바스크립트 (JavaScript)
+title: "자바스크립트 (JavaScript)"
 date: "2019-06-13T14:00:00.169Z"
 template: "post"
 draft: false

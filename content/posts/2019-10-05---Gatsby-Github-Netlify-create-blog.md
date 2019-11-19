@@ -1,5 +1,5 @@
 ---
-title: Gatsby + Github + Netlify 블로그 생성기 (방법)
+title: "Gatsby + Github + Netlify 블로그 생성기 (방법)"
 date: "2019-05-10T14:00:00.169Z"
 template: "post"
 draft: false
