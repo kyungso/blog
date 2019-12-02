@@ -1,16 +1,13 @@
 ---
-title: "React 웹팩(WebPack) 설정하기"
-date: "2019-08-01T14:00:00.169Z"
+title: "리액트 웹팩(WebPack) 설치하기"
+date: "2019-07-24T14:00:00.169Z"
 template: "post"
 draft: false
-slug: "/posts/React4/"
+slug: "/posts/webpack-install/"
 category: "React"
 tags:
-- "Frontend"
-- "React"
 - "webpack"
-- "babel"
-description: "웹팩(WebPack) 설정하기"
+description: "웹팩(WebPack) 설치 및 설정하기"
 ---
 
 <br>
@@ -18,11 +15,129 @@ description: "웹팩(WebPack) 설정하기"
 > 사전에 node가 설치되어야 합니다.
 자신의 OS에 맞게 node를 설치해주세요.
 
-이전 포스트 [웹팩 설치하기]()에 이어진 코드입니다. 참고하세요.
-
 <br>
 
 **Webpack 공식 문서 - [링크](https://webpack.js.org/concepts/)**
+
+<br>
+
+## 웹팩 (Webpack) 설치하기
+
+1. 터미널을 열고, 자신의 프로젝트 경로로 이동하여 "npm init" 입력합니다.
+
+<br>
+
+2. react와 react-dom을 설치합니다.
+
+```
+npm i react react-dom
+```
+
+<br>
+
+3. webpack과 webpack-cli를 추가로 설치합니다.
+( -D 는 개발용으로만 webpack을 사용할 것이라는 뜻입니다. 그래서 설치 후에, package.json 파일에서 "devDependencies": 에 추가됩니다. )
+
+```
+npm i -D webpack webpack-cli
+```
+
+<br>
+
+4. index.html 파일에서 webpack으로 출력할 파일을 추가해줍니다.
+
+``` HTML
+...
+<script src="./dist/app.js"></script>
+...
+```
+
+<br>
+
+5. Counter.jsx 파일 생성
+
+``` JavaScript
+const React = require('react');
+const { Component } = React;
+
+class Counter extends Component {
+    state = {
+
+    };
+
+    render() {
+
+    }
+}
+
+module.exports = Counter;
+```
+
+- React를 사용하기 위해서 2번에서 설치한 라이브러리를 위와 같이 선언해서 작성해줘야합니다.
+
+- 하단에 export 해야 다른 파일에서 Counter.jsx 파일을 사용할 수 있습니다.
+
+<br>
+
+6. client.jsx 파일 생성
+
+``` JavaScript
+const React = require('react');
+const ReactDom = require('react-dom');
+
+const Counter = require('./Counter');
+
+ReactDom.render(<Counter />, document.querySelector("#root"));
+```
+
+- 5번의 Counter 파일을 위와 같이 불러와, 렌더링 해줄 수 있습니다.
+
+<br>
+
+7. webpack.config.js 파일 생성
+
+``` JavaScript
+const path = require('path');
+//실서비스: process.env.NODE_ENV = 'production';
+
+module.exports = {
+  name: 'counter-settings',
+  mode: 'development', //실서비스: production
+  devtool: 'eval',  //실서비스: hidden-source-map
+  resolve: {
+    extensions: ['.js','.jsx']
+  }
+
+  entry: { //입력
+    app: ['./client']
+  },
+  output: { //출력
+    path: path.join(__dirname, 'dist'),
+    filename: 'app.js'
+  },
+}
+```
+
+- resolve는 확장자를 적어놓게 되면, 파일이름 뒤의 확장자를 webpack이 자동으로 찾아서 실행한다.
+
+- path는 자신의 프로젝트 경로의 폴더에서 원하는 파일로 설정할 수 있다.
+
+<br>
+
+8. 터미널에서 "webpack" 명령어를 실행하면, command not found가 뜰 것입니다. 그것을 해결하는 방법에는 여러 가지가 있지만, 2가지 방법을 알아보겠습니다.
+
+- package.json 파일에서 "scripts": { "dev": webpack } 으로 작성하여, 터미널에서 "npm run dev" 실행
+
+<br>
+
+- "npx webpack" 으로 실행
+
+<br>
+
+#### Error!!!! 가 나타납니다.
+#### - Error가 난 이유는 client.jsx 파일의 <Counter /> 태그인 JSX 때문입니다. 이것을 사용하기 위해서 바벨(babel) 설치가 필요합니다. 다음으로 가봅시다.
+
+<br>
 
 <br>
 
@@ -307,6 +422,8 @@ output: {
 webpack-dev-server가 탐지하는 것은 client.jsx나 client.jsx 에서 불러오는 것들만 자동으로 업데이트 반영해주는 것이다.
 
 webpack.config.js의 변경점은 스스로 눈치 채지 못하므로 변경시에 꼭 재실행 해줘야 합니다.
+
+<br>
 
 <br>
 
