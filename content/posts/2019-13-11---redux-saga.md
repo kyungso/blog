@@ -8,7 +8,7 @@ category: "React"
 tags:
 - "React"
 - "Test"
-description: "비동기 처리 미들웨어인 redux-saga"
+description: "비동기 처리 미들웨어인 redux-saga / 사가 함수 테스트하기"
 ---
 
 <br>
@@ -189,7 +189,73 @@ export default function* rootSaga() {
 
 `takeEvery`는 지정한 Action의 dispatch를 기다려, 그 Action을 인수로써 Task를 기동합니다.
 
+<br>
+<br>
 
+### 사가 함수 테스트하기
+
+리덕스 사가는 특히 테스트 코드를 작성할 때 빛을 발한다. 일반적으로 API 통신과 같은 비동기 코드를 테스트하려면 모조(mock) 객체를 생성해야 하지만 리덕스 사가에서는 모조 객체가 필요 없다. 이는 부수 효과 함수를 호출한 결과가 간단한 자바스크립트 객체이기 때문이다.
+
+`npm install @redux-saga/testing-utils`
+
+**<fetchData 함수>**
+
+``` JavaScript
+export function* fetchData() {
+  while(true) {
+    const { timeline } = yield take(types.REQUEST_LIKE);
+    yield put(actions.setLoading(true));
+    yield put(actions.addLike(timeline.id, 1));
+    try {
+      yield call(callApiLike);
+    } catch(error) {
+      yield put(actions.setError(error));
+      yield put(actions.addLike(timeline.id, -1));
+    }
+    yield put(actions.setLoading(false));
+  }
+}
+```
+
+예외가 발생하는 경우와 발생하지 않은 경우를 각각 테스트할 것이다.
+
+**<state/saga.test.js 파일의 내용>**
+
+``` JavaScript
+import  { take, put, call } from 'redux-saga/effects';
+import { cloneableGenerator } from "@redux-saga/testing-utils";
+import { types, action } from './index';
+import { fetchData } from './saga';
+import { callApiLike } from '../../common/api';
+
+describe("fetchData", () => {
+  const timeline = { id: 1 };
+  const action = actions.requestLike(timeline);
+  const gen = cloneableGenerator(fetchData)();
+  expect(gen.next().value).toEqual(take(types.REQREQUEST_LIKE));
+  expect(gen.next(action).value).toEqual(put(actions.setLoading(true)));
+  expect(gen.next().value).toEqual(put(actions.addLike(timeline.id, 1)));
+  expect(gen.next(aciton).value).toEqual(put(actions.setError('')));
+  expect(gen.next().value).toEqual(call(callApiLike));
+  it("on fail callApiLike", () => {
+    const gen2 = gen.clone();
+    const errorMsg = "error";
+    expect(gen2.throw(errorMsg).value).toEqual(put(actions.setError(errorMsg)));
+    expect(gen2.next().value).toEqual(put(actions.aaddLike(timeline.id, -1)));
+  });
+  it("on success callApiLike", () => {
+    const gen2 = gen.close();
+    expect(gen2.next(Promise.resolve()).value).toEqual(
+      put(actions.setLoading(false))
+    );
+    expect(gen2.next().value).toEqual(take(types.REQUEST_LIKE));
+  });
+});
+```
+
+cloneableGenerator 함수를 이용하면 복사가 가능한 제네레이터 객체를 만들 수 있따. 제너레이터 객체를 복사하면 다양한 경우를 테스트하기 좋다.
+
+callApiLike 함수에서 프로미스 객체를 거부됨 상태로 만드는 경우를 테스트하는 부분은, 프로미스 객체가 처리됨 상태가 되는 경우도 테스트해야 하므로 제너레이터 객체를 복사한다. 제너레이터 객체의 next 함수 대신에 throw 함수를 호출하면 예외를 발생시킬 수 있다.
 <br>
 <br>
 
