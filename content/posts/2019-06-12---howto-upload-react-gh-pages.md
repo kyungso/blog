@@ -3,7 +3,7 @@ title: "React 프로젝트 github pages에 배포하기"
 date: "2019-12-06T14:00:00.169Z"
 template: "post"
 draft: false
-slug: "/posts/howto-upload-react-gh-pages/"
+slug: "/posts/howto-deploy-react-gh-pages/"
 category: "React"
 tags:
 - "gh-pages"
