@@ -55,3 +55,60 @@ description: "Node.js v12 ES Module 에러"
 ```
 
 `--experimental-modules` 를 추가해주면 에러가 해결됩니다! 짠!
+
+<br>
+
+#### + 추가로 계속 에러가 나신다면...
+
+##### esm 라이브러리 사용
+
+- 1) `$ yarn add esm`
+
+<br>
+
+- 2) 기존의 src/index.js 파일의 이름을 main.js로 변경
+
+<br>
+
+- 3) 새로 src/index.js을 생성 후,
+
+  ``` JavaScript
+  /* eslint-disable no-global-assign */
+
+  require = require('esm')(module /*, options*/);
+  module.exports = require('./main.js');
+  ```
+
+<br>
+
+- 4) package.json 내용 수정
+
+  ``` JavaScript
+  "scripts": {
+    "start": "node -r esm src",
+    "start:dev": "nodemon --watch src/ -r esm src/index.js"
+  }
+  ```
+
+  <br>
+
+- 5) .eslintrc.json
+
+  eslint를 설정하셨다면 추가해주시고, 아니면 skip 하면됩니다.
+
+  ``` json
+  {
+    (...)
+    "parserOptions": {
+      "ecmaVersion": 2018,
+      "sourceType": "module"
+    }
+  }
+  ```
+
+ <br>
+
+
+기존에 실행 중이던 서버는 종료하고, 다시 서버를 시작하면,
+
+이제 프로젝트에서 import/export 구문을 자유롭게 사용할 수 있을 것입니다.
