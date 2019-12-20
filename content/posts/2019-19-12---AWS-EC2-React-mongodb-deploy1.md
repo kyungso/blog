@@ -1,5 +1,5 @@
 ---
-title: "(React + MongoDB), AWS EC2를 이용해서 서버호스팅 받기 (1)"
+title: "(React + MongoDB), AWS 배포 - EC2를 이용해서 서버호스팅 받기 (1)"
 date: "2019-12-19T14:00:00.169Z"
 template: "post"
 draft: false
