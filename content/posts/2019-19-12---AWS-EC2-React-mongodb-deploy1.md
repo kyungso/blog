@@ -7,7 +7,7 @@ slug: "/posts/AWS-EC2-React-mongodb-deploy1/"
 category: "React"
 tags:
 - "AWS"
-description: "리액트 앱을 AWS EC2를 이용해서 서버호스팅 받는 과정을 정리한 내용입니다."
+description: "MongoDB를 사용하는 리액트 프로젝트를 AWS EC2를 이용해서 서버호스팅 받는 과정을 정리한 내용입니다."
 ---
 
 <br>

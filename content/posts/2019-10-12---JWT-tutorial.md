@@ -1,5 +1,5 @@
 ---
-title: "JWT를 통한 인증 시스탬 구현하기"
+title: "JWT를 통한 인증 시스템 구현하기"
 date: "2019-12-10T14:00:00.169Z"
 template: "post"
 draft: false
