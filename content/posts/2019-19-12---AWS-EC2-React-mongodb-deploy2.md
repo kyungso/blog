@@ -65,21 +65,6 @@ npm 패키지를 설치해도 되고, yarn 패키지를 설치해도 되지만 �
 
 `sudo npm install -g pm2`
 
-
-<!-- 실행하고자 하는 리액트 프로젝트를 clone 하겠습니다.
-
-`git clone 'your repository url'`
-
-`cd /yourProject`
-
-`npm install`
-
-**nginx 설치**
-
-`sudo apt-get install nginx`
-
-인스턴스의 public ip로 들어갔을 때, nginx 기본 페이지가 나온다면 정상적으로 설치 완료된 것입니다. -->
-
 <br>
 
 ### MongoDB 설치
