@@ -3,7 +3,7 @@ title: "프론트엔드 개발 시작하기"
 date: "2020-01-14T14:00:00.169Z"
 template: "post"
 draft: false
-slug: "/posts/react/frontend-develop/"
+slug: "/posts/til/frontend-develop/"
 category: "TIL"
 tags:
 - "frontend"
